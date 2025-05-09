@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --background-color: #222327;
-    --text-primary: #894aff;
+    --text-primary: #7933fc;
     --text-white: #E5E7EB;
     --xsmall-margin: 0.3em;
     --small-margin: 0.6em;
@@ -37,6 +37,8 @@ a:link, a:visited {
     text-decoration: none;
 }
 body {
+    background: 
+        linear-gradient(#060510 40%, rgb(42, 16, 102) 100%);
     background-color: var(--background-color);
     color: var(--text-white);
     font-family: var(--font-family);
@@ -176,6 +178,15 @@ header {
     .aboutme-section img {
         max-width: 350px;
     }
+    .project-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+}
+@media (min-width: 1424px) {
+    body {
+        padding: 2.5em 10em;
+    }
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -185,16 +196,7 @@ header {
     button {
         display: flex;
         width: 16vw;
-        padding: 25px 20px;
-    }
-    .project-container {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-
-}
-@media (min-width: 1424px) {
-    body {
-        padding: 2.5em 10em;
+        padding: 25px 15px;
     }
 
 }
