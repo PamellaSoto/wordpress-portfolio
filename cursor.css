@@ -1,0 +1,29 @@
+#cursor-dot, #cursor-ball {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: difference; 
+}
+
+#cursor-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #D0D7E1;
+  z-index: 10000;
+}
+
+#cursor-ball {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #D0D7E1;
+  background-color: transparent;
+  transition: 
+    width 0.3s ease-out,
+    height 0.3s ease-out;
+}
+
+body {
+  cursor: none;
+}
